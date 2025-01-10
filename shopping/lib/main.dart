@@ -22,9 +22,24 @@ class ShoppingCart extends StatefulWidget {
 class _ShoppingCartState extends State<ShoppingCart> {
   // สินค้าตัวอย่างในร้าน
   final List<Map<String, dynamic>> products = [
-    {'name': 'Product A', 'price': 100, 'quantity': 0},
-    {'name': 'Product B', 'price': 200, 'quantity': 0},
-    {'name': 'Product C', 'price': 300, 'quantity': 0},
+    {
+      'name': 'Product A',
+      'price': 1000,
+      'quantity': 1,
+      'image': 'assets/images/1.jpg',
+    },
+    {
+      'name': 'Product B',
+      'price': 1500,
+      'quantity': 2,
+      'image': 'assets/images/1.jpg',
+    },
+    {
+      'name': 'Product C',
+      'price': 2000,
+      'quantity': 1,
+      'image': 'assets/images/ProductC.jpg',
+    },
   ];
 
   // ฟังก์ชันคำนวณผลรวมของราคา
@@ -107,7 +122,7 @@ class _ShoppingCartState extends State<ShoppingCart> {
               ],
             ),
           ),
-          // ปุ่มรีเซ็ต
+          // รีๆเร็ตๆ
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: ElevatedButton(
